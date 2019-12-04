@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_12_03_162651) do
     t.text "descritpion"
     t.string "speciality_1"
     t.string "speciality_2"
-    t.bigint "group_id"
+    t.string "group_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2019_12_03_162651) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.index ["email"], name: "index_artists_on_email", unique: true
-    t.index ["group_id"], name: "index_artists_on_group_id"
     t.index ["reset_password_token"], name: "index_artists_on_reset_password_token", unique: true
   end
 

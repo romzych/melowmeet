@@ -5,5 +5,4 @@ class Artist < ApplicationRecord
          :recoverable, :rememberable, :validatable
 	has_many :likes
 	has_many :requests
-	belongs_to :group
 end

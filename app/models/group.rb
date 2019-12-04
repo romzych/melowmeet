@@ -3,7 +3,7 @@ class Group < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-	has_many :artists
-	has_many :requests
+
+    has_many :requests
 	has_many :likes
 end

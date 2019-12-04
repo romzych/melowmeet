@@ -8,7 +8,7 @@ class CreateArtists < ActiveRecord::Migration[5.2]
       t.text :descritpion
       t.string :speciality_1
       t.string :speciality_2
-      t.belongs_to :group, index: true
+      t.string :group_name
       t.timestamps
     end
   end
